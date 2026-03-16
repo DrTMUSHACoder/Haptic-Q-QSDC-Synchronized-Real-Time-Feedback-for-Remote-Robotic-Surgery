@@ -4,7 +4,7 @@ Write-Host "Starting Haptic-Q System..." -ForegroundColor Cyan
 
 # 1. Start the FastAPI Dashboard
 Write-Host "1. Launching Dashboard (FastAPI)..." -ForegroundColor Yellow
-Start-Process cmd -ArgumentList "/c title Dashboard & uvicorn dashboard.main:app --host 127.0.0.1 --port 8000"
+Start-Process cmd -ArgumentList "/c title Dashboard & uvicorn main:app --host 127.0.0.1 --port 8000"
 
 # Wait a moment for server to initialize
 Start-Sleep -Seconds 2
